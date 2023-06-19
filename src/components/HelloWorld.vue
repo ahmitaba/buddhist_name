@@ -5,6 +5,11 @@
 
    <h2 v-show="step == 0">App免費下載</h2>
 
+
+
+      <!-- 
+        Use Google Form（Google）    -->
+
      <!-- <div class="ui buttons" v-show="step == 0">
       <a class="ui huge blue button" href="https://apps.apple.com/tw/app/%E5%BF%B5%E4%BD%9B%E8%99%9F/id1637378153" target="_blank"><i class="app store icon" />App Store下載
       </a>
