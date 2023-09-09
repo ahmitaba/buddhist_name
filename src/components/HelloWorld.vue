@@ -108,8 +108,8 @@
       <div class="field">
         <div class="ui buttons">
           <button type="button" class="ui huge green button ani tada" @click.prevent="addNumber"><i class = "upload icon"/>登錄佛號</button>
-          <div class="or"></div>
-          <button  type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google icon"/>google登入</button>
+          <!--<div class="or"></div>
+          <button  type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google icon"/>google登入</button> -->
           <button  type="button" class = "ui huge blue button ani tada" @click.prevent ="logout" v-else>
             <img id = "r" :src="photoURL" />
             <i class = "sign-out icon"/>登出</button>
@@ -164,8 +164,8 @@
       <div class="field">
         <div class="ui buttons">
           <button type="button" class="ui huge green button ani tada" @click.prevent="addNumber"><i class = "upload icon"/>登錄佛號</button>
-          <div class="or"></div>
-          <button type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google icon"/>google登入</button>
+          <!-- <div class="or"></div>
+          <button type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google icon"/>google登入</button> -->
           <button type="button" class = "ui huge blue button ani tada" @click.prevent ="logout" v-else>
             <img id = "r" :src="photoURL" />
             <i class = "sign-out icon"/>登出</button>
