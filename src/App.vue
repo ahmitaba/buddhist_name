@@ -77,7 +77,7 @@ export default {
       for (var i = 0; i < this.names.length; i++) {
         let n = this.names[i]
         // console.log(new Date(n.time).getFullYear())
-        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2023) && (new Date(n.time).getMonth() >= 4))) {
+        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2023) && (new Date(n.time).getMonth() >= 8))) {
           // console.log(parseInt(n.number))
           ans += parseInt(n.number)
         }

@@ -73,7 +73,7 @@
           <span class="fat-only">加總</span></router-link>的功能，您可以輸入關鍵字打自己的名字，查到所有的記錄和加總。</p>
 
         <p>若您希望在其他佛寺使用類似的軟體，<br/>可以在<i class = "github icon"/>Github上，將本專案創建分叉版(Fork)，自行修改架站。</p>
-        <p>原始碼完全公開，請見此：<a href="https://github.com/bestian/number" target="_blank"><i class = "github icon"/>原始碼</a>
+        <p>原始碼完全公開，請見此：<a href="https://github.com/ahmitaba/buddhist_name" target="_blank"><i class = "github icon"/>原始碼</a>
 
         &nbsp;&nbsp;&nbsp;&nbsp;<a class="ui tiny gray button" @click="dismiss = true">不再顯示提示</a></p>
       </div>
@@ -109,10 +109,10 @@
         <div class="ui buttons">
           <button type="button" class="ui huge green button ani tada" @click.prevent="addNumber"><i class = "upload icon"/>登錄佛號</button>
           <!--<div class="or"></div>
-          <button  type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google icon"/>google登入</button> -->
-          <button  type="button" class = "ui huge blue button ani tada" @click.prevent ="logout" v-else>
+          <button  type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google  icon"/>google登入</button> -->
+          <!--<button  type="button" class = "ui huge blue button ani tada" @click.prevent ="logout" v-else>
             <img id = "r" :src="photoURL" />
-            <i class = "sign-out icon"/>登出</button>
+            <i class = "sign-out icon"/>登出</button>-->
         </div>
       </div>
     </form>
@@ -166,9 +166,9 @@
           <button type="button" class="ui huge green button ani tada" @click.prevent="addNumber"><i class = "upload icon"/>登錄佛號</button>
           <!-- <div class="or"></div>
           <button type="button" class = "ui huge orange button ani tada" @click.prevent ="loginGoogle" v-if="!user"><i class = "google icon"/>google登入</button> -->
-          <button type="button" class = "ui huge blue button ani tada" @click.prevent ="logout" v-else>
+          <!--<button type="button" class = "ui huge blue button ani tada" @click.prevent ="logout" v-else>
             <img id = "r" :src="photoURL" />
-            <i class = "sign-out icon"/>登出</button>
+            <i class = "sign-out icon"/>登出</button> -->
         </div>
       </div>
     </form>
