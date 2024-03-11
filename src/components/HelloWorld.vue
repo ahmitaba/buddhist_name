@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
     <h1>
-      <a @click="step = 0"><img src="../assets/fuo.jpg" class="avatar" alt="fuo"/>永明佛寺念佛共修</a></h1>
+      <a @click="step = 0"><img src="../assets/fuo.jpg" class="avatar" alt="fuo"/>永明佛寺+明峰佛寺念佛共修</a></h1>
 
-   <h2 v-show="step == 0">App免費下載</h2>
+   <!--<h2 v-show="step == 0">App免費下載</h2> -->
 
 
 
@@ -32,7 +32,7 @@
 
     <div class="ui segment container" v-show="step == 1">
 
-      <h2 class="ui header">2023冬季千萬佛號活動-1</h2>
+      <h2 class="ui header">千萬佛號活動</h2>
 
       <div class="ui active inverted dimmer" v-show="!myTotal">
         <div class="ui text loader">資料載入中...</div>
@@ -55,19 +55,21 @@
       </h4> -->
 
       <h4 class="ui header">
-        永明佛寺點亮心燈光明燈迴向表：
+        永明佛寺+明峰佛寺點亮心燈光明燈迴向表：
       <br/>
         <a href="https://forms.gle/zeuANUaxF5AWhrBH" target="_blank" rel="noopener noreferrer">https://forms.gle/zeuANUaxF5AWhrBH</a>
       <br/>
-        永明佛寺為您守護一輩子光明心燈
+        永明佛寺+明峰佛寺為您守護一輩子光明心燈
       </h4>
 
       <div v-show="!dismiss">
         <h3 class ="ui header"> 使用說明</h3>
         <p>白淨家人佛安<br/>為世界千萬和平祈福！集結人們善念共振存儲無形富貴財富！</p>
         <p>請在網站上登錄您的名字和今天念了幾聲佛號，再按「登錄佛號」按鈕即可。</p>
-        <p>每個名字每天只能登錄一次，請在晚上7:30前登錄以便回向，永明佛寺會在晚上7:30-8:00間回向。</p>
+        <p>每個名字每天只能登錄一次，請在晚上7:30前登錄以便回向，永明佛寺+明峰佛寺會在晚上7:30-8:00間回向。</p>
         <p>永明佛寺地址：台東縣太麻里鄉華源村南北坑58-1號。永明佛寺電話：<a herf="tel:0937280910">0937280910</a>、<a herf="tel:0982029814">0982029814</a></p>
+
+        <p>明峰佛寺地址：台東縣卑南鄉明峰村龍過脈171之一號</p>
 
         <p>目前有<router-link class = "item" to ="/about"><i class ="plus icon"/>
           <span class="fat-only">加總</span></router-link>的功能，您可以輸入關鍵字打自己的名字，查到所有的記錄和加總。</p>

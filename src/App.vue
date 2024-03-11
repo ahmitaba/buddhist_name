@@ -22,6 +22,7 @@
         <router-link class = "item" to ="/88"><i class ="users icon"/>
         <span class="fat-only">88佛</span></router-link>
         <a class = "item fat-only" href="https://sites.google.com/view/innerpurelight/%E9%A6%96%E9%A0%81" target="_blank"><i class ="globe icon"/>台東永明佛寺</a>
+        <a class = "item fat-only" href="https://www.google.com/search?q=%E5%8F%B0%E6%9D%B1%E6%98%8E%E5%B3%B0%E4%BD%9B%E5%AF%BA&sca_esv=946c7383e35f7723&sca_upv=1&rlz=1C5CHFA_enTW1013TW1013&sxsrf=ACQVn09PvlPyIime2LMfit1eqEyOEmu7Qg%3A1710131691126&ei=64nuZcagB8vm2roPhJqa2Ak&ved=0ahUKEwiGwt__sOuEAxVLs1YBHQSNBpsQ4dUDCBE&uact=5&oq=%E5%8F%B0%E6%9D%B1%E6%98%8E%E5%B3%B0%E4%BD%9B%E5%AF%BA&gs_lp=Egxnd3Mtd2l6LXNlcnAiEuWPsOadseaYjuWzsOS9m-WvujIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESNwSUJMEWP4NcAF4AJABAJgBZaAB1QOqAQM1LjG4AQPIAQD4AQGYAgegAuoDwgILEAAYgAQYogQYsAPCAgsQABiJBRiiBBiwA5gDAIgGAZAGBJIHAzYuMaAH1Ak&sclient=gws-wiz-serp" target="_blank"><i class ="globe icon"/>台東明峰佛寺</a>
         <a class = "item fat-only" href="https://github.com/bestian/number" target="_blank"><i class ="github icon"/>原始碼</a>
         <div class="wide item">
           <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fbestian.github.io%2Fnumber%2F%23%2F&layout=button_count&size=small&appId=485195848253155&width=71&height=20" width="100" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
