@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h1>
-      <a @click="step = 0"><img src="../assets/fuo.jpg" class="avatar" alt="fuo"/>永明佛寺+明峰佛寺念佛共修</a></h1>
+    <h2>
+      <a @click="step = 0"><img src="../assets/fuo.jpg" class="avatar" alt="fuo"/>永明佛寺+明峰佛寺念佛共修</a></h2>
 
    <!--<h2 v-show="step == 0">App免費下載</h2> -->
 
