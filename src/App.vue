@@ -78,7 +78,17 @@ export default {
       for (var i = 0; i < this.names.length; i++) {
         let n = this.names[i]
         // console.log(new Date(n.time).getFullYear())
-        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2023) && (new Date(n.time).getMonth() >= 11))) {
+        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() >= 1))) {
+          // console.log(parseInt(n.number))
+          ans += parseInt(n.number)
+        }
+        // console.log(ans)
+      }
+
+      for (var j = 0; j < this.old_names.length; j++) {
+        let n = this.old_names[j]
+        // console.log(new Date(n.time).getFullYear())
+        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() >= 1))) {
           // console.log(parseInt(n.number))
           ans += parseInt(n.number)
         }
@@ -89,6 +99,7 @@ export default {
     }
   },
   mounted () {
+    // console.log('mounted');
     window.addEventListener('wheel', this.onScroll);
     if("ontouchstart" in window){
        window.addEventListener('touchmove', this.onScroll);
