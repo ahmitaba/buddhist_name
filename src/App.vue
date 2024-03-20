@@ -94,7 +94,7 @@ export default {
        window.addEventListener('touchmove', this.onScroll);
     }
     const vm = this
-    this.axios.get('./data/data-2023-04.json').then((response) => {
+    this.axios.get('./data/data-2024-03.json').then((response) => {
       // console.log(response.data)
       vm.old_names = response.data
       // console.log(vm.old_names)
