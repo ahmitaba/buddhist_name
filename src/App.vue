@@ -77,8 +77,10 @@ export default {
       var ans = 0
       for (var i = 0; i < this.names.length; i++) {
         let n = this.names[i]
-        // console.log(new Date(n.time).getFullYear())
-        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() >= 1))) {
+        console.log(new Date(n.time).getFullYear())
+        console.log(new Date(n.time).getMonth())
+
+        if ((new Date(n.time).getFullYear() > 2024) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() > 3)) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() == 3) && (new Date(n.time).getDate() >= 4)) ) {
           // console.log(parseInt(n.number))
           ans += parseInt(n.number)
         }
@@ -88,7 +90,7 @@ export default {
       for (var j = 0; j < this.old_names.length; j++) {
         let n = this.old_names[j]
         // console.log(new Date(n.time).getFullYear())
-        if ((new Date(n.time).getFullYear() > 2023) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() >= 1))) {
+        if ((new Date(n.time).getFullYear() > 2024) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() > 3)) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() == 3) && (new Date(n.time).getDate() >= 4)) ) {
           // console.log(parseInt(n.number))
           ans += parseInt(n.number)
         }

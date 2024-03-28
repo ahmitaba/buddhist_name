@@ -32,13 +32,13 @@
 
     <div class="ui segment container" v-show="step == 1">
 
-      <h2 class="ui header">千萬佛號活動</h2>
+      <h4 class="ui header">千萬佛號活動(2024/04/04起算)</h4>
 
-      <div class="ui active inverted dimmer" v-show="!myTotal">
+      <div class="ui active inverted dimmer" v-show="myTotal === undefined">
         <div class="ui text loader">資料載入中...</div>
       </div>
 
-      <div v-show="myTotal" class="ui indicating green progress" :data-value="myTotal" data-total="10000000" id="ex">
+      <div v-show="myTotal !== null" class="ui indicating green progress" :data-value="myTotal" data-total="10000000" id="ex">
         <div class="bar" :style="{width: myS + '%'}">
           <div class="progress"></div>
         </div>
