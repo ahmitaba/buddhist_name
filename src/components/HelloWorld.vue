@@ -32,7 +32,7 @@
 
     <div class="ui segment container" v-show="step == 1">
 
-      <h4 class="ui header">千萬佛號活動(2024/04/04起算)</h4>
+      <h4 class="ui header">一億佛號活動(2024/04/04起算)</h4>
 
       <div class="ui active inverted dimmer" v-show="myTotal === undefined">
         <div class="ui text loader">資料載入中...</div>
@@ -223,7 +223,7 @@ export default {
   }),
   computed: {
     myS () {
-      const ans = (this.myTotal || 0) * 100 / 10000000
+      const ans = (this.myTotal || 0) * 100 / 100000000
       // console.log(ans)
       return ans
     }
