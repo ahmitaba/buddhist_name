@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <form class="ui form container" v-show="step == 1 && myTotal">
+    <form class="ui form container" v-show="step == 1">
       <div class="fields">
         <div class="field">
           <label><i class = "calendar icon"/>今天日期：{{date}}</label>
@@ -139,7 +139,7 @@
 
     <div class="ui divider" v-show="step == 1"></div>
     
-    <form class="ui form container" v-show="names[0] && step == 1 && myTotal">
+    <form class="ui form container" v-show="names[0] && step == 1">
       <div class="fields">
         <div class="field">
           <label><i class = "calendar icon"/>今天日期：{{date}}</label>
