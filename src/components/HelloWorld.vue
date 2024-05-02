@@ -286,11 +286,11 @@ export default {
         if (this.names.filter(function (o) {
           return o.n === vm.name && o.date === vm.date
         }).length === 0) {
-          // const idx = arr.length
-          arr.push(o)
+          const idx = arr.length
+          // arr.push(o)
           // console.log(arr)
           console.log('push new data')
-          set(dbRef(db, 'names'), arr).then(() => {
+          set(dbRef(db, 'names/' + idx), o).then(() => {
             window.alert('登入成功:' + o.n + '今天念了' + o.number +  '聲佛號')
             localStorage.name = this.name;
             this.number = 0;
