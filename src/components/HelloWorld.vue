@@ -79,6 +79,8 @@
         <p>若您希望在其他佛寺使用類似的軟體，<br/>可以在<i class = "github icon"/>Github上，將本專案創建分叉版(Fork)，自行修改架站。</p>
         <p>原始碼完全公開，請見此：<a href="https://github.com/ahmitaba/buddhist_name" target="_blank"><i class = "github icon"/>原始碼</a>
 
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="420" height="876" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+
         &nbsp;&nbsp;&nbsp;&nbsp;<a class="ui tiny gray button" @click="dismiss = true">不再顯示提示</a></p>
       </div>
     </div>
