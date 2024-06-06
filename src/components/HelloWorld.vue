@@ -54,15 +54,17 @@
         行程表請按此</a>
       </h4> -->
 
-      <h4 class="ui header">
+      <!--<h4 class="ui header">
         永明佛寺+明峰佛寺點亮心燈光明燈迴向表：
       <br/>
         <a href="https://forms.gle/zeuANUaxF5AWhrBH" target="_blank" rel="noopener noreferrer">https://forms.gle/zeuANUaxF5AWhrBH</a>
       <br/>
         永明佛寺+明峰佛寺為您守護一輩子光明心燈
-      </h4>
+      </h4>-->
 
       <div v-show="!dismiss">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="88%" height="876" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+
         <h3 class ="ui header"> 使用說明</h3>
         <p>白淨家人佛安<br/>為世界千萬和平祈福！集結人們善念共振存儲無形富貴財富！</p>
         <p>請在網站上登錄您的名字和今天念了幾聲佛號，再按「登錄佛號」按鈕即可。</p>
@@ -78,8 +80,6 @@
 
         <p>若您希望在其他佛寺使用類似的軟體，<br/>可以在<i class = "github icon"/>Github上，將本專案創建分叉版(Fork)，自行修改架站。</p>
         <p>原始碼完全公開，請見此：<a href="https://github.com/ahmitaba/buddhist_name" target="_blank"><i class = "github icon"/>原始碼</a>
-
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="88%" height="876" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 
         &nbsp;&nbsp;&nbsp;&nbsp;<a class="ui red basic button" @click="dismiss = true">不再顯示提示</a></p>
       </div>
