@@ -37,7 +37,8 @@
 import { db } from './firebase'
 import { ref as dbRef } from 'firebase/database'
 import { useDatabaseList } from 'vuefire'
-
+import { data_2024_03 } from './data/data-2024-03.js'
+import { data_2024_03to08 } from './data/data-2024-03to08.js'
 
 const names = useDatabaseList(dbRef(db, 'names'))
 
@@ -77,8 +78,8 @@ export default {
       var ans = 0
       for (var i = 0; i < this.names.length; i++) {
         let n = this.names[i]
-        console.log(new Date(n.time).getFullYear())
-        console.log(new Date(n.time).getMonth())
+        // console.log(new Date(n.time).getFullYear())
+        // console.log(new Date(n.time).getMonth())
 
         if ((new Date(n.time).getFullYear() > 2024) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() > 3)) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() == 3) && (new Date(n.time).getDate() >= 4)) ) {
           // console.log(parseInt(n.number))
@@ -107,11 +108,8 @@ export default {
        window.addEventListener('touchmove', this.onScroll);
     }
     const vm = this
-    this.axios.get('./data/data-2024-03.json').then((response) => {
-      // console.log(response.data)
-      vm.old_names = response.data
-      // console.log(vm.old_names)
-    })
+    vm.old_names = data_2024_03.concat(data_2024_03to08)
+    console.log(vm.old_names)
   },
   methods: {
     onScroll () {
