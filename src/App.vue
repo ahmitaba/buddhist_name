@@ -37,7 +37,7 @@
 import { db } from './firebase'
 import { ref as dbRef } from 'firebase/database'
 import { useDatabaseList } from 'vuefire'
-import { data_2024_03 } from './data/data-2024-03.js'
+// import { data_2024_03 } from './data/data-2024-03.js'
 import { data_2024_03to08 } from './data/data-2024-03to08.js'
 
 const names = useDatabaseList(dbRef(db, 'names'))
@@ -108,7 +108,8 @@ export default {
        window.addEventListener('touchmove', this.onScroll);
     }
     const vm = this
-    vm.old_names = data_2024_03.concat(data_2024_03to08)
+    // data_2024_03
+    vm.old_names = data_2024_03to08
     console.log(vm.old_names)
   },
   methods: {
