@@ -81,7 +81,7 @@ export default {
         // console.log(new Date(n.time).getFullYear())
         // console.log(new Date(n.time).getMonth())
 
-        if ((new Date(n.time).getFullYear() > 2024) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() > 3)) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() == 3) && (new Date(n.time).getDate() >= 4)) ) {
+        if ((new Date(n.time).getFullYear() > 2024) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() > 8)) || ((new Date(n.time).getFullYear() == 2024) && (new Date(n.time).getMonth() == 8) && (new Date(n.time).getDate() >= 28)) ) {
           // console.log(parseInt(n.number))
           ans += parseInt(n.number)
         }

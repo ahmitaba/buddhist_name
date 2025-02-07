@@ -32,7 +32,7 @@
 
     <div class="ui segment container" v-show="step == 1">
 
-      <h4 class="ui header">一億佛號活動(2024/04/04起算)</h4>
+      <h4 class="ui header">一億佛號活動(2024/09/28起算)</h4>
 
       <div class="ui active inverted dimmer" v-show="myTotal === undefined">
         <div class="ui text loader">資料載入中...</div>
