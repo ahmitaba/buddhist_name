@@ -32,7 +32,7 @@
 
     <div class="ui segment container" v-show="step == 1">
 
-      <h4 class="ui header">一億佛號活動(2024/09/28起算)</h4>
+      <h4 class="ui header">一億佛號活動(2025/02/22~2025/09/28)</h4>
 
       <div class="ui active inverted dimmer" v-show="myTotal === undefined">
         <div class="ui text loader">資料載入中...</div>
@@ -63,7 +63,7 @@
       </h4>-->
 
       <div v-show="!dismiss">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="88%" height="876" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="88%" height="676" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 
         <h3 class ="ui header"> 使用說明</h3>
         <p>白淨家人佛安<br/>為世界千萬和平祈福！集結人們善念共振存儲無形富貴財富！</p>
