@@ -45,7 +45,12 @@
         <div class="label">已達成：{{ myTotal }} / 10000000</div>
       </div>
 
-      <div v-show="myToDay" class="label">本日加總：{{ myToDay }}聲佛號</div>
+      <div class="label">
+        <span v-show="myToDay">本日加總：<b>{{ myToDay }}</b>聲佛號</span>
+        <router-link to="/recent_count" class="ui tiny button" style="margin-left: 10px; font-size: 14px;">
+          <i class="chart line icon"></i>查看近期統計
+        </router-link>
+      </div>
 
       <!-- <h4 class="ui header">
         2023 永明佛寺行腳行程表
@@ -65,6 +70,24 @@
       <div v-show="!dismiss">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="88%" height="676" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 
+        <h3 class ="ui header">南無阿彌陀佛 六字洪名太不可思議 🟢🔵<span class="fat-only">🟢🔵</span></h3>
+        <div class="buddha-blessing">
+          <div style="margin-bottom: 0.5em;">
+            西方極樂世界進入的通關密碼 💚🩷💚🩷💚
+          </div>
+          <ul style="margin-left: 1.2em;" class="vertical-list">
+            <li>
+              <span style="font-weight: bold;">🌎 信：</span>30% 完全相信人類不會生病不會死亡。
+            </li>
+            <li>
+              <span style="font-weight: bold;">🌎 願：</span>30% 一心一意的透過通關密碼<br/><b style="margin-left: 1.2em;">「南無阿彌陀佛」</b>六字大法好。
+            </li>
+            <li>
+              <span style="font-weight: bold;">🌎 行：</span>40% 積極無私、無怨無悔地幫助眾生<br/><span style="margin-left: 1.2em;">創造實相世界！</span>
+            </li>
+          </ul>
+        </div>
+        <div class="ui divider"></div>
         <h3 class ="ui header"> 使用說明</h3>
         <p>白淨家人佛安<br/>為世界千萬和平祈福！集結人們善念共振存儲無形富貴財富！</p>
         <p>請在網站上登錄您的名字和今天念了幾聲佛號，再按「登錄佛號」按鈕即可。</p>
@@ -490,6 +513,17 @@ a {
 #ex {
   position: relative;
   width: 100%;
+}
+
+.vertical-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 360px;
+  text-align: left;
 }
 
 </style>
