@@ -12,7 +12,7 @@
  icon"/>最高</th>
       </tr></thead>
       <tbody>
-        <tr v-for = "d in days().slice().reverse()" :key="d">
+        <tr v-for = "d in days()" :key="d">
           <td data-label="Name">{{ d }}</td>
           <td data-label="Total" v-show="nameF(d)[0]">
             <div><img src="../assets/fuo.jpg" class="avatar"/>{{ nameF(d)[0] }}<br class="thin-only"/><span class="highlight">{{ countF(d)[0] }}聲</span><br class="thin-only"/>佛號</div>
@@ -40,14 +40,16 @@ export default {
   }),
   methods: {
     days: function (){
-      var ans = [];
-      for (var i = 0; i < this.names.length; i++) {
-        let d = this.names[i].date;
-        if (ans.indexOf(d) == -1) {
-          ans.push(d)
-        }
-      }
-      return ans
+      var today = new Date();
+      // 生成最近30天的日期列表（最新的在前）
+      return Array.from({ length: 30 }, function(_, i) {
+        var date = new Date(today);
+        date.setDate(today.getDate() - i);
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        return year + '/' + month + '/' + day;
+      });
     },
     countF: function(d) {
       var list = this.names.filter(function(k) {
@@ -86,8 +88,4 @@ export default {
 </script>
 
 <style scoped>
-
-td {
-}
-
 </style>
