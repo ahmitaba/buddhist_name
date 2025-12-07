@@ -395,7 +395,7 @@ export default {
       this.name = localStorage.name;
     }
     if (localStorage.dismiss) {
-      this.dismiss = localStorage.dismiss;
+      this.dismiss = JSON.parse(localStorage.dismiss);
     }
     if (localStorage.reason) {
       this.reason = localStorage.reason;
