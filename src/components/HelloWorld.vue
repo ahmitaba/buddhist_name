@@ -1,7 +1,12 @@
 <template>
   <div class="hello">
     <h2>
-      <a @click="step = 0"><img src="../assets/fuo.jpg" class="avatar" alt="fuo"/>南無阿彌陀佛覺醒團隊 明峰佛寺念佛共修</a></h2>
+      <a @click="step = 0">
+        <img src="../assets/fuo.jpg" class="avatar" alt="fuo"/>
+          南無阿彌陀佛覺醒團隊&nbsp;&nbsp;&nbsp;&nbsp;<br class="thin-only"/>
+          <div style="width: 1em; height: 1em; display: inline-block;" class="thin-only"></div>明峰佛寺念佛共修
+        </a>
+      </h2>
 
    <!--<h2 v-show="step == 0">App免費下載</h2> -->
 
@@ -39,7 +44,7 @@
       </div>
 
       <div v-show="myTotal !== null" class="ui indicating green progress" :data-value="myTotal" data-total="10000000" id="ex">
-        <div class="bar" :style="{width: myS + '%'}">
+        <div class="bar" :style="{width: (Math.min(myS, 100)) + '%'}">
           <div class="progress"></div>
         </div>
         <div class="label">已達成：{{ myTotal }} / 10000000</div>
@@ -51,6 +56,29 @@
           <i class="chart line icon"></i>查看近期統計
         </router-link>
       </div>
+
+      <div class="ui divider"></div>
+
+      <div>
+        <h3 class ="ui header">南無阿彌陀佛 六字洪名太不可思議 🟢🔵<span class="fat-only">🟢🔵</span></h3>
+        <div class="buddha-blessing">
+          <div style="margin-bottom: 0.5em;">
+            西方極樂世界進入的通關密碼 💚🩷💚🩷💚
+          </div>
+          <ul style="margin-left: 1.2em;" class="vertical-list">
+            <li>
+              <span style="font-weight: bold;">🌎 信：</span>30% 完全相信人類不會生病不會死亡。
+            </li>
+            <li>
+              <span style="font-weight: bold;">🌎 願：</span>30% 一心一意的透過通關密碼<br/><b style="margin-left: 1.2em;">「南無阿彌陀佛」</b>六字大法好。
+            </li>
+            <li>
+              <span style="font-weight: bold;">🌎 行：</span>40% 積極無私、無怨無悔地幫助眾生<br/><span style="margin-left: 1.2em;">創造實相世界！</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
 
       <!-- <h4 class="ui header">
         2023 永明佛寺行腳行程表
@@ -70,24 +98,6 @@
       <div v-show="!dismiss">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBmqo2vukf9_0566w9c-ASXfov5mfqGwmZdUEx-RHiBd6SAw/viewform?embedded=true" width="88%" height="676" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 
-        <h3 class ="ui header">南無阿彌陀佛 六字洪名太不可思議 🟢🔵<span class="fat-only">🟢🔵</span></h3>
-        <div class="buddha-blessing">
-          <div style="margin-bottom: 0.5em;">
-            西方極樂世界進入的通關密碼 💚🩷💚🩷💚
-          </div>
-          <ul style="margin-left: 1.2em;" class="vertical-list">
-            <li>
-              <span style="font-weight: bold;">🌎 信：</span>30% 完全相信人類不會生病不會死亡。
-            </li>
-            <li>
-              <span style="font-weight: bold;">🌎 願：</span>30% 一心一意的透過通關密碼<br/><b style="margin-left: 1.2em;">「南無阿彌陀佛」</b>六字大法好。
-            </li>
-            <li>
-              <span style="font-weight: bold;">🌎 行：</span>40% 積極無私、無怨無悔地幫助眾生<br/><span style="margin-left: 1.2em;">創造實相世界！</span>
-            </li>
-          </ul>
-        </div>
-        <div class="ui divider"></div>
         <h3 class ="ui header"> 使用說明</h3>
         <p>白淨家人佛安<br/>為世界千萬和平祈福！集結人們善念共振存儲無形富貴財富！</p>
         <p>請在網站上登錄您的名字和今天念了幾聲佛號，再按「登錄佛號」按鈕即可。</p>
