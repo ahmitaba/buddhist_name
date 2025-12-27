@@ -28,3 +28,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```bash
 sh deploy.sh
 ```
+
+### 資料備份流程速記
+
+1. 從Firebase下載備份
+2. 存進src/data/{日期註記}.js
+3. 到App.vue，import它，並concat進原本的資料中
+4. 截下當日的資料，上傳回Firebase
+
+note: 不是用axois撈資料
