@@ -184,9 +184,9 @@ export default {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  -webkit-animation:spin 4s 2 linear;
-  -moz-animation:spin 4s 2 linear;
-  animation:spin 4s 2 linear;
+  /* -webkit-animation:spin 4s 2 linear; */
+  /* -moz-animation:spin 4s 2 linear; */
+  /* animation:spin 4s 2 linear; */
 }
 
 @-webkit-keyframes spin {
@@ -275,8 +275,8 @@ label, input {
   background-color: #9f9;
   padding: 0 0.5em;
   border-radius: 10px;
-  -webkit-animation: jump 1s linear infinite;
-  animation: jump 1s linear infinite;
+  /* -webkit-animation: jump 1s linear infinite; */
+  /* animation: jump 1s linear infinite; */
 }
 
 .left.aligned {
