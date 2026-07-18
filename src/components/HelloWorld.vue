@@ -302,6 +302,19 @@ export default {
       const vm = this
       var arr = this.obj_to_list(this.names)
       // console.log(arr)
+
+      // 台北時間晚上7:00~8:00之間，不允許登錄佛號
+      const now = new Date()
+      const hour = Number(new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Taipei',
+        hour: '2-digit',
+        hourCycle: 'h23'
+      }).format(now))
+      
+      if (hour >= 19 && hour < 20) {
+        alert('台北時間晚上7:00~8:00之間為佛寺報佛號時間，請在其他時間登錄佛號，阿彌陀佛')
+        return
+      }
       
       if (!this.name) {
         alert('請輸入您的大名');
