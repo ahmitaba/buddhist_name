@@ -40,6 +40,7 @@ import { useDatabaseList } from 'vuefire'
 // import { data_2024_03 } from './data/data-2024-03.js'
 import { data_2024_03to08 } from './data/data-2024-03to08.js'
 import { data_202408to202512 } from './data/data-2024-08to2025-12.js'
+import { data_202512to202610 } from './data/data-2025-12to2026-10.js'
 
 const names = useDatabaseList(dbRef(db, 'names'))
 
@@ -116,7 +117,7 @@ export default {
     }
     const vm = this
     // data_2024_03
-    vm.old_names = data_2024_03to08.concat(data_202408to202512)
+    vm.old_names = data_2024_03to08.concat(data_202408to202512).concat(data_202512to202610)
     console.log(vm.old_names)
   },
   methods: {
